@@ -1,0 +1,57 @@
+{
+  // Submission entity schema
+  "name": "Submission",
+  "type": "object",
+  "properties": {}
+}
+{
+  "name": "Submission",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "item_type": {
+      "type": "string",
+      "enum": [
+        "project",
+        "challenge",
+        "homework",
+        "assignment"
+      ]
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "item_title": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "changes_requested"
+      ],
+      "default": "pending"
+    },
+    "score": {
+      "type": "number"
+    },
+    "feedback": {
+      "type": "string"
+    },
+    "github_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_id",
+    "item_type",
+    "item_title"
+  ]
+}

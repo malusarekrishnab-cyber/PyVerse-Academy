@@ -1,0 +1,92 @@
+{
+  "name": "UserProgress",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number",
+      "default": 1
+    },
+    "xp": {
+      "type": "number",
+      "default": 0
+    },
+    "coins": {
+      "type": "number",
+      "default": 0
+    },
+    "streak": {
+      "type": "number",
+      "default": 0
+    },
+    "last_login_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "typing_wpm": {
+      "type": "number",
+      "default": 0
+    },
+    "typing_accuracy": {
+      "type": "number",
+      "default": 0
+    },
+    "learning_hours": {
+      "type": "number",
+      "default": 0
+    },
+    "completed_topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "completed_projects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "completed_challenges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "daily_goal_minutes": {
+      "type": "number",
+      "default": 30
+    },
+    "today_minutes": {
+      "type": "number",
+      "default": 0
+    },
+    "avatar": {
+      "type": "string",
+      "default": "\ud83d\udc0d"
+    },
+    "goal": {
+      "type": "string",
+      "default": "Learn Python"
+    },
+    "experience_level": {
+      "type": "string",
+      "default": "Absolute Beginner"
+    }
+  },
+  "required": [
+    "user_id"
+  ]
+}

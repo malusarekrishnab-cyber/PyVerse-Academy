@@ -1,0 +1,85 @@
+{
+  "name": "Challenge",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Beginner",
+        "Easy",
+        "Medium",
+        "Hard",
+        "Expert",
+        "Company Level"
+      ]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Logic",
+        "Debug",
+        "Coding",
+        "Company",
+        "Interview"
+      ]
+    },
+    "topic": {
+      "type": "string"
+    },
+    "problem_statement": {
+      "type": "string"
+    },
+    "sample_input": {
+      "type": "string"
+    },
+    "sample_output": {
+      "type": "string"
+    },
+    "constraints": {
+      "type": "string"
+    },
+    "hints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "starter_code": {
+      "type": "string"
+    },
+    "solution": {
+      "type": "string"
+    },
+    "test_cases": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "xp_reward": {
+      "type": "number",
+      "default": 10
+    },
+    "coin_reward": {
+      "type": "number",
+      "default": 5
+    },
+    "estimated_time": {
+      "type": "string"
+    },
+    "error_type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "difficulty",
+    "category"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Certificate",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "student_name": {
+      "type": "string"
+    },
+    "certificate_type": {
+      "type": "string",
+      "enum": [
+        "Topic",
+        "Module",
+        "Typing",
+        "Project",
+        "Hackathon",
+        "Course Completion",
+        "Company Challenge",
+        "Interview Ready"
+      ]
+    },
+    "course_name": {
+      "type": "string"
+    },
+    "certificate_id": {
+      "type": "string"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "xp": {
+      "type": "number"
+    },
+    "level": {
+      "type": "number"
+    },
+    "border_style": {
+      "type": "string",
+      "enum": [
+        "Gold",
+        "Silver",
+        "Bronze"
+      ],
+      "default": "Gold"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "user_id",
+    "student_name",
+    "certificate_type",
+    "course_name",
+    "certificate_id"
+  ]
+}

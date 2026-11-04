@@ -1,0 +1,46 @@
+{
+  "name": "Activity",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "lesson",
+        "homework",
+        "quiz",
+        "project",
+        "typing",
+        "challenge",
+        "badge",
+        "certificate",
+        "login"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "xp_earned": {
+      "type": "number",
+      "default": 0
+    },
+    "coins_earned": {
+      "type": "number",
+      "default": 0
+    },
+    "icon": {
+      "type": "string",
+      "default": "\ud83d\udcda"
+    }
+  },
+  "required": [
+    "user_id",
+    "type",
+    "title"
+  ]
+}
